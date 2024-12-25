@@ -4,8 +4,8 @@ package Assignment4;
 public class Question2 {
     public static void main(String[] args) {
 
-        Spiller2 A= new Spiller2();
-        Spiller2 B= new Spiller2();
+        Spiller A= new Spiller();
+        Spiller B= new Spiller();
 
         int rundeNummer=1;
 

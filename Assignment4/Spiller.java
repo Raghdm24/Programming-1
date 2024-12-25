@@ -1,11 +1,11 @@
 package Assignment4;
 
-
+//For Question 2
 import java.util.Random;
-public class Spiller2 {
+public class Spiller {
     private int sumPoeng;
 
-    public Spiller2(){               //Constructor
+    public Spiller(){               //Constructor
         sumPoeng = 0;
     }
 

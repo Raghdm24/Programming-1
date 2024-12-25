@@ -1,9 +1,10 @@
 package Assignment4;
 
-public class Valuta1 {
+//For Question 1
+public class Valuta {
     double amountFromUser;
 
-    public Valuta1(double amountFromUser){      //constructor to get the amount from user
+    public Valuta(double amountFromUser){      //constructor to get the amount from user
         this.amountFromUser= amountFromUser;
     }
 

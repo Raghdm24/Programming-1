@@ -1,6 +1,6 @@
 package Assignment6;
 
-
+//For Question 3
 public class Matrise {
     int [][] matrise;
 

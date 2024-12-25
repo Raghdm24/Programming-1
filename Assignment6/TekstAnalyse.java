@@ -1,5 +1,6 @@
 package Assignment6;
 
+//For Question 2
 public class TekstAnalyse {
     int [] antallTegn= new int[30];     
     private String teksten;

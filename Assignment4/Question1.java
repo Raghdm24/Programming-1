@@ -15,7 +15,7 @@ public class Question1 {
         System.out.println("Enter the amount: ");
         double amount = input.nextDouble();
 
-        Valuta1 one =  new Valuta1(amount);
+        Valuta one =  new Valuta(amount);
 
         //From Kr to (dollar,euro,swedish)
         if ( choice.equalsIgnoreCase("from")) {
