@@ -1,40 +1,39 @@
 package Assignment7;
 
-
+//For Question 1
 public class NewString{
-    private String tekst;     //Gjør objektvariabelen immutabel
+    private String tekst;     
 
-    public NewString(String tekst){   //string i parameteren er input fra usern
+    public NewString(String tekst){   
         this.tekst = tekst;
     }
 
-    //metode for forkotning:
+    
     public String getForkortning(){
-        String[] ord= tekst.split(" "); //deler opp teksten i ord
-        StringBuilder forkortelse= new StringBuilder();  //StringBuilder er en klasse som er mutabel(kan endres på)
+        String[] ord= tekst.split(" "); 
+        StringBuilder forkortelse= new StringBuilder();  
 
-        for(String ordet: ord ){     //for each-item loop (for hver ordet i ord)
-            if(ordet.length()>0){    //at det faktisk er et ord
+        for(String ordet: ord ){     
+            if(ordet.length()>0){    
                 forkortelse.append(ordet.charAt(0));
             }
         }
-        return forkortelse.toString();                          //returnerer forkortelsen som en string
+        return forkortelse.toString();                          
     }
 
     public String getFjernTegn(){
-        StringBuilder nyTekst= new StringBuilder();              //علشان اضيف اول باول بس اشيل كل حرف e
-        int indeks= tekst.indexOf("e");                          //finne den første 'e'
+        StringBuilder nyTekst= new StringBuilder();              
+        int indeks= tekst.indexOf("e");                          
 
-        while(indeks!=-1){                                       // while det finnes fortsatt 'e'
+        while(indeks!=-1){                                       
 
-            nyTekst.append(tekst.substring(0,indeks));            //indeks not included
-            tekst= tekst.substring(indeks+1);           //(indeks+1: til slutten liksom)
+            nyTekst.append(tekst.substring(0,indeks));            
+            tekst= tekst.substring(indeks+1);           
             indeks= tekst.indexOf("e");
 
         }
 
-        //legg til resten av teksten som ikke inneholder 'e'
-        nyTekst.append(tekst);                                     //når det ikke finnes mer e, skal den legge den siste teksten i NyTekst her
+        nyTekst.append(tekst);                                     
         return nyTekst.toString();
 
     }

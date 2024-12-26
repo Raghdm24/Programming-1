@@ -15,5 +15,7 @@ public class Question1 {
 
         System.out.println(forkort);
         System.out.println(fjern);
+
+        input.close();
     }
 }
